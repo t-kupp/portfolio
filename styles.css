@@ -153,6 +153,7 @@ a {
   height: 300px;
   object-fit: cover;
   border-radius: 3px 3px 0px 0px;
+  outline: 2px solid darkgrey
 }
 
 .project-thumbnail-small {
@@ -160,6 +161,7 @@ a {
   height: 200px;
   object-fit: cover;
   border-radius: 3px 3px 0px 0px;
+  outline: 1px solid darkgrey
 }
 
 #fcc-cert {
@@ -169,6 +171,7 @@ a {
 .cert-thumbnail {
   width: 400px;
   object-fit: contain;
+  border-radius: 3px 3px 0px 0px;
   outline: 2px solid darkgrey
 }
 
@@ -185,10 +188,12 @@ a {
 .project-tile {
   outline: 2px solid transparent;
   transition: outline 250ms linear;
+  border-radius: 2px;
 }
 
 .project-tile:hover {
-  outline: 2px solid #D0B766;
+  outline: 2px solid var(--main-gold);
+  border-radius: 2px;
 }
 
 /* End projects */
