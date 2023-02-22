@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Raleway&family=Roboto&display=swap');
+
+
+/* Color Palette */
+:root {
+  --main-gray: #c3c0c0;
+  --main-gold: #b29758;
+  --main-slate: #5c5f7c;
+  --main-blue: #404472;
+  --main-navy: #191c40;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 480px) {
+  * {
+    font-size: 100% !important;
+  }
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Start navbar */
+#navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+  height: 60px;
+  width: 100%;
+  font-weight: 600;
+  background: var(--main-gold);
+  border-top: 1px solid gray;
+  border-bottom: 2px solid gray;
+}
+
+.nav-link {
+  font-family: Raleway, sans-serif;
+  text-decoration: none;
+  color: inherit;
+  margin: 0px 50px;
+  font-size: 20px;
+  text-shadow: 2px 2px 2px gray;
+}
+/* End navbar */
+
+/* Start welcome-section */
+#welcome-section {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg,var(--main-slate) 0%, var(--main-navy) 100%);
+}
+
+#welcome-section > h1 {
+  font-size: 54px;
+  font-weight: 600;
+}
+
+#welcome-section > p {
+  font-size: 20px;
+  color: var(--main-gold);
+  font-style: italic;
+  font-weight: 400;
+}
+/* End welcome-section */
+
+/* Start projects */
+#projects {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-blue);
+  padding: 6rem 0 2rem 0;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+#projects > h2 {
+  font-size: 28px;
+  border-bottom: 1px solid gray;
+  padding: 0 40px;
+}
+
+/* Start project grid */
+
+#project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 4rem;
+  margin: 80px auto;
+}
+
+.project-thumbnail {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 3px 3px 0px 0px;
+}
+
+.project-title {
+   text-align: center;
+   font-family: raleway, sans-serif;
+   font-size: 18px;
+   color: white;
+   background: var(--main-slate);
+   padding: 1rem 0.5rem;
+   border-radius: 0px 0px 3px 3px;
+}
+
+.project-tile {
+  text-decoration: none;
+
+}
+
+/* End projects */
+
+/* Start contacts */
+
+#contact {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 100%;
+  background: var(--main-slate);
+}
+
+#contact-header > h2 {
+  font-size: 44px;
+  margin: 30px;
+    text-shadow: 0 0 4px black;
+}
+
+.contact-link {
+  text-decoration: none;
+  color: white;
+  font-size: 28px;
+  padding: 0px 20px;
+  text-shadow: 2px 2px 4px black;
+  transition: text-shadow 250ms ease-in-out 0ms;
+}
+
+:hover.contact-link {
+  text-shadow:1px 1px 2px black, 0 0 8px #D0B766;
+}
+
+/* End contact */
+
+footer {
+  background: var(--main-slate);
+  text-align: right;
+  padding: 20px;
+  border-top: 4px solid var(--main-gold);
+}
