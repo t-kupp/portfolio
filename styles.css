@@ -59,6 +59,11 @@ a {
   margin: 0px 50px;
   font-size: 20px;
   text-shadow: 2px 2px 2px gray;
+  transition: color 150ms ease-in-out 0ms;
+}
+
+:hover.nav-link {
+  color: var(--main-blue);
 }
 /* End navbar */
 
@@ -87,31 +92,60 @@ a {
 /* End welcome-section */
 
 /* Start projects */
+
 #projects {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   background-color: var(--main-blue);
-  padding: 6rem 0 2rem 0;
+  padding: 4rem 0 4rem 0;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
 }
 
-#projects > h2 {
+#recent-projects {
+  width: 100%;
+  max-width: 2160px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+#recent-projects > h2 {
+  font-size: 28px;
+  border-bottom: 1px solid gray;
+  padding: 0 40px;
+  margin-bottom: 40px;
+}
+
+#fcc-projects {
+  width: 100%;
+  max-width: 2160px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#fcc-projects > h2 {
   font-size: 28px;
   border-bottom: 1px solid gray;
   padding: 0 40px;
 }
 
-/* Start project grid */
-
 #project-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 4rem;
-  margin: 80px auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  width: 100%;
+
 }
 
 .project-thumbnail {
@@ -128,12 +162,16 @@ a {
    color: white;
    background: var(--main-slate);
    padding: 1rem 0.5rem;
-   border-radius: 0px 0px 3px 3px;
+   border-radius: 0px 0px 3px 3px;;
 }
 
 .project-tile {
-  text-decoration: none;
+  outline: 2px solid transparent;
+  transition: outline 250ms linear;
+}
 
+.project-tile:hover {
+  outline: 2px solid #D0B766;
 }
 
 /* End projects */
@@ -141,12 +179,11 @@ a {
 /* Start contacts */
 
 #contact {
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  height: 90vh;
   width: 100%;
   background: var(--main-slate);
 }
@@ -177,4 +214,8 @@ footer {
   text-align: right;
   padding: 20px;
   border-top: 4px solid var(--main-gold);
+}
+
+footer > p {
+  color: lightgray;
 }
