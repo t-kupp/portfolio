@@ -170,6 +170,12 @@ a {
   padding-bottom: 50px;
 }
 
+.language-icon-wrapper {
+  position: relative;
+  top: 20px;
+  font-size: 18px;
+}
+
 .project-wrapper {
   width: 100%;
   display: flex;
