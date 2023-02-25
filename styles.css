@@ -2,12 +2,20 @@
 
 
 /* Color Palette */
-:root {
+/* :root {
   --main-gray: #c3c0c0;
   --main-gold: #b29758;
   --main-slate: #5c5f7c;
   --main-blue: #404472;
   --main-navy: #191c40;
+} */
+
+:root {
+  --main-black: #0B0C10;
+  --main-darkgray: #1F2833;
+  --main-lightgray: #C5C6C7;
+  --main-cyan: #66FCF1;
+  --main-darkcyan: #45A29E;
 }
 
 * {
@@ -47,27 +55,37 @@ a {
   height: 60px;
   width: 100%;
   font-weight: 600;
-  background: var(--main-gold);
   border-top: 1px solid gray;
-  border-bottom: 2px solid gray;
 }
 
 .nav-link {
   font-family: Raleway, sans-serif;
   text-decoration: none;
   color: inherit;
-  margin: 0px 50px;
-  font-size: 20px;
-  text-shadow: 2px 2px 2px gray;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 3px;
+  margin: 0px 20px;
   transition: color 150ms ease-in-out 0ms;
+  padding: 6px 12px;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 250ms ease-in-out 0ms;
 }
 
 :hover.nav-link {
-  color: var(--main-blue);
+  border-bottom: 2px solid var(--main-darkcyan)
 }
+
 /* End navbar */
 
 /* Start welcome-section */
+
+#welcome-wrapper {
+  height: 100vh;
+  width: 100%;
+  background-color: var(--main-black);
+}
+
 #welcome-section {
   height: 100vh;
   width: 100%;
@@ -75,29 +93,103 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(45deg,var(--main-slate) 0%, var(--main-navy) 100%);
 }
 
-#welcome-section > h1 {
+#greetings {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#welcome-background-image {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  z-index: +1;
+  opacity: 10%;
+  pointer-events: none;
+}
+
+#welcome-headline {
   font-size: 54px;
   font-weight: 600;
+  color: var(--main-cyan);
+  z-index: +2;
 }
 
-#welcome-section > p {
+#welcome-subtext {
   font-size: 20px;
-  color: var(--main-gold);
   font-style: italic;
   font-weight: 400;
+  z-index: +2;
 }
+
+#currently-working-on {
+  margin-top: 50px;
+  font-family: raleway;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+
+#down-link-projects {
+  position: relative;
+  text-align: center;
+  bottom: 80px;
+  width: 100%;
+
+ }
+
+.down-link-border {
+ padding: 7px 14px;
+ border: 1px solid var(--main-darkcyan);
+ border-radius: 50px;
+ font-size: 12px;
+ font-weight: 600;
+ letter-spacing: 1.5px;
+ background-color: transparent;
+ transition: background-color 150ms ease-in-out 0ms;
+}
+
+:hover.down-link-border {
+ background-color:var(--main-darkgray)
+}
+
+
 /* End welcome-section */
 
 /* Start projects */
 
 #projects {
-  background-color: var(--main-blue);
-  padding: 4rem 0 4rem 0;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  background-color: var(--main-black);
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  min-height: 900px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.project-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-tile {
+  display: block;
+}
+
+.project-tile:hover .project-title{
+  background-color: var(--main-darkgray);
+}
+
+.project-description {
+  width: 400px;
+  margin: 0 60px;
+  color:var(--main-lightgray);
+  font-style: italic;
 }
 
 #recent-projects {
@@ -109,14 +201,15 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
+  
 }
 
-#recent-projects > h2 {
+.project-header {
   font-size: 28px;
   border-bottom: 1px solid gray;
   padding: 0 40px;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 #fcc-projects {
@@ -131,12 +224,6 @@ a {
 
 }
 
-#fcc-projects > h2 {
-  font-size: 28px;
-  border-bottom: 1px solid gray;
-  padding: 0 40px;
-}
-
 #project-grid {
   display: flex;
   justify-content: space-evenly;
@@ -149,95 +236,101 @@ a {
 }
 
 .project-thumbnail-big {
-  width: 400px;
-  height: 300px;
+  width: 360px;
+  height: 200px;
   object-fit: cover;
-  border-radius: 3px 3px 0px 0px;
-  outline: 2px solid darkgrey
 }
 
 .project-thumbnail-small {
-  width: 300px;
-  height: 200px;
+  width: 240px;
+  height: 144px;
   object-fit: cover;
-  border-radius: 3px 3px 0px 0px;
-  outline: 1px solid darkgrey
-}
-
-#fcc-cert {
-  margin-top: 40px;
 }
 
 .cert-thumbnail {
   width: 400px;
   object-fit: contain;
-  border-radius: 3px 3px 0px 0px;
-  outline: 2px solid darkgrey
 }
 
 .project-title {
-   text-align: center;
+  text-align: center;
    font-family: raleway, sans-serif;
-   font-size: 18px;
+   font-size: 11px;
+   font-weight: 600;
+   text-transform: uppercase;
    color: white;
-   background: var(--main-slate);
-   padding: 1rem 0.5rem;
-   border-radius: 0px 0px 3px 3px;;
+   border: 2px solid var(--main-darkcyan);
+   padding: 1rem 1.5rem;
+   letter-spacing: 3px;
+   margin-top: 10;
+   background-color: transparent;
+   transition: background-color 100ms linear;
 }
 
-.project-tile {
-  outline: 2px solid transparent;
-  transition: outline 250ms linear;
-  border-radius: 2px;
-}
-
-.project-tile:hover {
-  outline: 2px solid var(--main-gold);
-  border-radius: 2px;
-}
+#down-link-contacts {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  top: 100px;
+ }
 
 /* End projects */
 
 /* Start contacts */
 
+#contact-background-image {
+  position: absolute;
+  height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  z-index: +1;
+  opacity: 10%;
+  pointer-events: none;
+  transform: rotate(180deg);
+  transform: scaleY(-1);
+}
+
 #contact {
+  height: 100vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 90vh;
-  width: 100%;
-  background: var(--main-slate);
+  background-color: var(--main-black);
 }
 
 #contact-header > h2 {
+  color: var(--main-cyan);
   font-size: 44px;
-  margin: 30px;
-    text-shadow: 0 0 4px black;
+  margin: 50px;
 }
 
 .contact-link {
   text-decoration: none;
   color: white;
   font-size: 28px;
+  margin: 0px 30px;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 250ms ease-in-out 0ms;
   padding: 0px 20px;
-  text-shadow: 2px 2px 4px black;
-  transition: text-shadow 250ms ease-in-out 0ms;
 }
 
 :hover.contact-link {
-  text-shadow:1px 1px 2px black, 0 0 8px #D0B766;
+  border-bottom: 3px solid var(--main-darkcyan)
 }
 
 /* End contact */
 
 footer {
-  background: var(--main-slate);
+  background: var(--main-black);
   text-align: right;
   padding: 20px;
   border-top: 4px solid var(--main-gold);
 }
 
-footer > p {
-  color: lightgray;
+#copyright {
+  letter-spacing: 1px;
+  font-size: 10px;
+  color:var(--main-lightgray);
 }

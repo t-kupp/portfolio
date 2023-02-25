@@ -9,60 +9,69 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
   </head>
   <body>
+
 <!-- Start navbar -->
+
     <nav id="navbar">
-      <a class="nav-link" href="#welcome-section">About</a>
-      <a class="nav-link" href="#projects">Work</a>
-      <a class="nav-link" href="#contact">Contact</a>
+      <a class="nav-link" href="#welcome-section">ABOUT</a>
+      <a class="nav-link" href="#projects">WORK</a>
+      <a class="nav-link" href="#contact">CONTACT</a>
     </nav>
+
 <!-- End nav-bar -->
 
 <!-- Start welcome-section -->
+    <div id="welcome-wrapper">
     <div id="welcome-section">
-      <h1>Hey I am Thorge</h1>
-      <p>aspiring web-developer</p>
+      <img id="welcome-background-image" src="./images/background1440.jpg">
+      <div id="greetings">
+        <h1 id="welcome-headline">Hey I am Thorge </h1>
+        <p id="welcome-subtext">aspiring web-developer</p>
+        <p id="currently-working-on">I am currently working on learning the fundamentals of Javascript.</p>
+      </div>
     </div>
+    <div id="down-link-projects">
+      <a class="down-link-border" href="#projects"><i class="fas fa-arrow-down"></i> Projects <i class="fas fa-arrow-down"></i></a>
+    </div>
+    </div>
+
+    
+
 <!-- End welcome-section -->
 
 <!-- Start projects -->
+
     <div id="projects">
       <div id="recent-projects">
-        <h2>Recent Projects</h2>
-        <div class="project-tile">
-          <a href="https://codepen.io/t-kupp/pen/ZEMWxdj" target="_blank"><img src="https://lh3.googleusercontent.com/pw/AMWts8BeBIpC4TvtsruKHjvQHRJjJjq0vRbhDkpdPdo8ZD2_NDOt2uJaES0zZ-Hxl7K_ptpfZBkeOkCuIPxYU7Lu-widAEPE_ua0jxbueMD8_tgVeZjjmbXFBn9hKgEQ-jCrtn5w00-PpGdqtaLwXlW58q4=w977-h493-no?authuser=0" class="project-thumbnail-big" />
-          <p class="project-title">Starbucks coding excercise</p></a>
+        <h2 class="project-header">Recent Projects</h2>
+        <div class="project-wrapper">
+            <a class="project-tile" href="https://codepen.io/t-kupp/pen/ZEMWxdj" target="_blank"><img src="https://lh3.googleusercontent.com/pw/AMWts8BeBIpC4TvtsruKHjvQHRJjJjq0vRbhDkpdPdo8ZD2_NDOt2uJaES0zZ-Hxl7K_ptpfZBkeOkCuIPxYU7Lu-widAEPE_ua0jxbueMD8_tgVeZjjmbXFBn9hKgEQ-jCrtn5w00-PpGdqtaLwXlW58q4=w977-h493-no?authuser=0" class="project-thumbnail-big" />
+            <p class="project-title">Starbucks coding excercise</p></a>
+            <p class="project-description">A small coding excercise in which I try to recreate the starbucks.com frontpage with as much accuracy as possible.</p>
         </div>        
       </div>
+      
       <div id="fcc-projects">
-        <h2>freeCodeCamp.org Certification Projects</h2>
-        <div id="fcc-cert" class="project-tile">
-          <a href="https://www.freecodecamp.org/certification/T-Kupp/responsive-web-design" target="_blank"> <img src="https://lh3.googleusercontent.com/ZxVqXkBlFQL_Ea3Yk06SVa3yhRWWqROMVuC1-6UGcQquo8WTz97f_zyk3uyUoWEFJ5auEJKPknZBIZKUHZLJYFI0F9FrrL_VE1shc_c1zLnYzAclMamOdfJxfUjXc22wo0A0GpAIquvq2YUeFDbIxJYFdwo8zLbfLGB1_bt4WrudHxvY_OeE4bQsx8YdUvSzpdsYP99ATF784e1uPaUHAuZrsQDYnKvxWh4-WYWRlOG1jJG2SbIYi17FUdWGsLtZ5kqQ_N6l6EcGNNWhoOMAyOk29Lgm7httYxLC7tbyQuYgkxTdS5vKrLKGVXEtwXFdkVRnFKepZ97PXpCFSAFiwOhixiBHhuPN6rMrwZ534crspHM_N8YJZ3-xHldJGVrJzdN8ldj184bDD5OaDIOEEZ2knkhl8hIuVjgMF6KG2JRBPHnVXTjZZXFKx0ff3MyYHsHXKxQBCqOLD_hae7-ChmNwLB79w9XwAkmmnGM9m_sT3wgWKmYOqFNChSBbAbBfIjfcf4azQ-Xg8CyiArUG0YsUK05N5gZZL6uj7bIGbVcENOF8-pMMXSsunsxLyN0mrmijJ9aE7bcKg73cpk31AZof0tzY0HLjzsGhFqSDJdYBZc0GahluaKN9g5XaWc36G4NPPnH7ugwOQHm4CUI1R2VW-HlV4M3rnlpsyBmfo_kRx5fXGnA5DLYSCoREt5_WBTE_GajkEJwoi19Le9WOj_unKenuBrS6Xs2eFveCoW_gqWN2LWEgg2UsKIy9VRk3CPV8KuZxHnBXP0hjMsAfYaxUzmjrLLky8nn5YPLAFrg9ctoIMSbL7QeBx0NGPkDRwhido49Jl4rJ-S2ljF63lNkA8_fBRjy6yT4fJ9NZuMDEpnCAz252Tr9p72r9a3izxgVrMLDrZORXbdkTSfFeOg7AmMJ83YmlG8uIs-in9GNKxMs=w1312-h577-no?authuser=0" class="cert-thumbnail" />
-          <p class="project-title">Responsive Web Design Certification</p></a>
-        </div>
-        <div id="project-grid">
-          <div class="project-tile">
-            <a href="https://codepen.io/t-kupp/pen/ZEjPrxJ" target="_blank"><img src="https://i.imgur.com/Z7NKOFx.png" class="project-thumbnail-small">
-            <p class="project-title">Dalahästar Product Page</p></a>
-          </div>
-          <div class="project-tile">
-            <a href="https://codepen.io/t-kupp/pen/KKBEQQN" target="_blank"><img src="https://i.imgur.com/3TBe8HL.png" class="project-thumbnail-small" />
-            <p class="project-title">Alan Turing Tribute Page</p></a>
-          </div>
-          <div class="project-tile">
-          <a href="https://codepen.io/t-kupp/pen/jOpJZYM" target="_blank"><img src="https://i.imgur.com/azn9ihw.png" class="project-thumbnail-small" />
-            <p class="project-title">Survey about living in Sweden</p></a>
-          </div>
-          <div class="project-tile">
-          <a href="https://codepen.io/t-kupp/pen/jOpJZZM" target="_blank"><img src="https://i.imgur.com/J7oSFS8.png" class="project-thumbnail-small" />
-            <p class="project-title">Sweden Sightseeing</p></a>
-          </div>
+        <h2 class="project-header">freeCodeCamp.org Certification Projects</h2>
+        <div class="project-wrapper">
+          <a class="project-tile" href="https://www.freecodecamp.org/certification/T-Kupp/responsive-web-design" target="_blank"> <img src="./images/fcc-cert-thumbnail.png" class="project-thumbnail-big" />
+          <p class="project-title">Responsive Web Design Cert.</p></a>
+          <p class="project-description">On February 6, 2023 I completed freeCodeCamp.org's Responsive Web Design course earning the respective certification.</p>
         </div>
       </div>
+      <div id="down-link-contacts" >
+        <a class="down-link-border" href="#contact"><i class="fas fa-arrow-down"></i> Contact <i class="fas fa-arrow-down"></i></a>
+      </div>
     </div>
+
+    
+    
 <!-- End projects -->
 
 <!-- Start contact -->
+
     <div id="contact">
+      <img id="contact-background-image" src="./images/background1440.jpg">
       <div id="contact-header">
         <h2>Contact me here!</h2>
       </div>
@@ -79,7 +88,7 @@
 
 <!-- Start footer -->
     <footer>
-      <p>© 2023 Jan-Thorge Kupper</p>
+      <p id="copyright">© 2023 Jan-Thorge Kupper</p>
     </footer>
 <!-- End Footer -->
   </body>
