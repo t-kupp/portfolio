@@ -131,6 +131,7 @@ a {
   font-family: raleway;
   letter-spacing: 1px;
   font-size: 18px;
+  text-align: center;
 }
 
 #down-link-projects {
@@ -181,6 +182,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .project-tile {
@@ -196,6 +198,7 @@ a {
   margin: 0 60px;
   color:var(--main-lightgray);
   font-style: italic;
+  margin-top: 20px;
 }
 
 #recent-projects {
@@ -216,6 +219,7 @@ a {
   border-bottom: 1px solid gray;
   padding: 0 40px;
   margin-bottom: 60px;
+  text-align: center;
 }
 
 #fcc-projects {
@@ -286,8 +290,8 @@ a {
 
 #contact-background-image {
   position: absolute;
-  height: 100%;
-  min-width: 100%;
+  height: 100vh;
+  width: 100%;
   object-fit: cover;
   z-index: +1;
   opacity: 10%;
@@ -304,12 +308,17 @@ a {
   justify-content: center;
   align-items: center;
   background-color: var(--main-black);
+  text-align: center;
 }
 
 #contact-header > h2 {
   color: var(--main-cyan);
   font-size: 44px;
   margin: 50px;
+}
+
+#contact-links {
+  display: flex;
 }
 
 .contact-link {
@@ -339,4 +348,29 @@ footer {
   letter-spacing: 1px;
   font-size: 10px;
   color:var(--main-lightgray);
+}
+
+
+/* sclaing for low resolution devices  */
+
+@media (max-width: 640px ) {
+
+  .contact-link {
+    font-size: 4.3vw !important;
+}
+  #down-link-projects, #down-link-contacts {
+    visibility: hidden !important;
+}
+  #welcome-headline {
+    font-size: 8.4vw !important;
+  }
+  #contact-header > h2 {
+    font-size: 6.8vw !important;
+  }
+}
+
+@media (max-width: 1440px) {
+  #navbar {
+    visibility: hidden !important;
+  }
 }
