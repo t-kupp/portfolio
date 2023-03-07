@@ -1,103 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
-</head>
-<body>
-
-<!-- Start navigation bar -->
-  <header>
-    <div id="navbar">
-      <a class="nav-link" href="#welcome-section">ABOUT</a>
-      <a class="nav-link" href="#project-section">WORK</a>
-      <a class="nav-link" href="#contact-section">CONTACT</a>
-    </div>
-  </header>
-<!-- End navigation bar  -->
-
-<!-- Start welcome section -->
-  <main>
-    <div id="welcome-section">
-      <div id="greeting">
-        <h1 class="section-header">Hey I am Thorge</h1>
-        <p id="greeting-subtext">aspiring web-developer</p>
-        <p id="greeting-currently-learning">I am currently learning the fundamentals of Javascript with the help of <a href="https://www.theodinproject.com/" target="_blank">theodinproject.com</a>.</p>
-        <a class="down-button" href="#project-section"><i class="fas fa-arrow-down"></i> Projects <i class="fas fa-arrow-down"></i></a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+  </head>
+  <body>
+    <!-- Start navigation bar -->
+    <header>
+      <div id="navbar">
+        <a class="nav-link" href="#welcome-section">ABOUT</a>
+        <a class="nav-link" href="#project-section">WORK</a>
+        <a class="nav-link" href="#contact-section">CONTACT</a>
       </div>
-    </div>
-<!-- End welcome section  -->
+    </header>
+    <!-- End navigation bar  -->
 
-<!-- Start project section  -->
-    <div id="project-section">
-
-      <h2 class="project-section-header">Recent Projects</h2>
-        <div class="project-wrapper">
-          <a class="project-tile" href="https://codepen.io/t-kupp/pen/ZEMWxdj" target="_blank"><img class="project-thumbnail" src="./images/starbucks-thumbnail.png" />
-            <p class="project-name">Starbucks coding excercise</p></a>
-            <div class="project-description">
-              <p>A small coding excercise in which I try to recreate the starbucks.com frontpage with as much accuracy as possible.</p>
-              <div class="language-icon-wrapper">
-                <p><i class="devicon-html5-plain colored"></i>
-                <i class="devicon-css3-plain colored"></i></p>
-              </div>
-            </div>
+    <!-- Start welcome section -->
+    <main>
+      <div id="welcome-section">
+        <div id="greeting">
+          <h1 class="section-header">Hey I am Thorge</h1>
+          <p id="greeting-subtext">aspiring web-developer</p>
+          <p id="greeting-currently-learning">
+            I am currently learning the fundamentals of Javascript with the help
+            of
+            <a href="https://www.theodinproject.com/" target="_blank"
+              >theodinproject.com</a
+            >.
+          </p>
+          <a class="down-button" href="#project-section"
+            ><i class="fas fa-arrow-down"></i> Projects
+            <i class="fas fa-arrow-down"></i
+          ></a>
         </div>
+      </div>
+      <!-- End welcome section  -->
 
+      <!-- Start project section  -->
+      <div id="project-section">
+        <h2 class="project-section-header">Recent Projects</h2>
         <div class="project-wrapper">
-          <a class="project-tile" href="https://github.com/t-kupp/odin-rock-paper-scissors" target="_blank"><img class="project-thumbnail" src="./images/rock-paper-scissors-thumbnail.png" />
-            <p class="project-name">Rock Paper Scissors</p></a>
-            <div class="project-description">
-              <p>A very much work-in-progress theodinproject.com's Javascript learning project in which I make my own version of Rock Paper Scissors. The game is playable in console and I am working on building a usable interface.
-              </p>
-              <div class="language-icon-wrapper">
-                <p><i class="devicon-html5-plain colored"></i>
+          <a
+            class="project-tile"
+            href="https://codepen.io/t-kupp/pen/ZEMWxdj"
+            target="_blank"
+            ><img
+              class="project-thumbnail"
+              src="./images/starbucks-thumbnail.png"
+            />
+            <p class="project-name">Starbucks coding excercise</p></a
+          >
+          <div class="project-description">
+            <p>
+              A small coding excercise in which I try to recreate the
+              starbucks.com frontpage with as much accuracy as possible.
+            </p>
+            <div class="language-icon-wrapper">
+              <p>
+                <i class="devicon-html5-plain colored"></i>
                 <i class="devicon-css3-plain colored"></i>
-                <i class="devicon-javascript-plain colored"></i></p>
-              </div>
-            </div>
-        </div>
-
-        <h2 class="project-section-header">freeCodeCamp.org Certification Projects</h2>
-        <div class="project-wrapper">
-          <a class="project-tile" href="https://www.freecodecamp.org/certification/T-Kupp/responsive-web-design" target="_blank"><img class="project-thumbnail" src="./images/fcc-cert-thumbnail.png" />
-            <p class="project-name">Responsive Web Design Cert.</p></a>
-            <div class="project-description">
-              <p>In February 2023 I completed freeCodeCamp.org's Responsive Web Design course earning the respective certification.
               </p>
-              <div class="language-icon-wrapper">
-                <p><i class="devicon-html5-plain colored"></i>
-                <i class="devicon-css3-plain colored"></i></p>
-              </div>
             </div>
+          </div>
         </div>
 
-      <a class="down-button" href="#contact-section"><i class="fas fa-arrow-down"></i> Contact <i class="fas fa-arrow-down"></i></a>
-    </div>
-<!-- End project section  -->
-
-<!-- Start contact section -->
-    <div id="contact-section">
-      <div id="contact-text">
-        <h1 class="section-header">Contact me here!</h1>
-        <div id="contact-links-wrapper">
-          <a href="https://github.com/t-kupp" target="_blank" class="contact-link">
-          <i class="fab fa-github"></i> Github
-          </a>
-          <a href="mailto:kupper.thorge@gmail.com" target="_blank" class="contact-link">
-          <i class="fas fa-at"></i> Send a mail
-          </a>
+        <div class="project-wrapper">
+          <a
+            class="project-tile"
+            href="https://github.com/t-kupp/odin-rock-paper-scissors"
+            target="_blank"
+            ><img
+              class="project-thumbnail"
+              src="./images/rock-paper-scissors-thumbnail.png"
+            />
+            <p class="project-name">Rock Paper Scissors</p></a
+          >
+          <div class="project-description">
+            <p>
+              The first Javascript project from theodinproject.com. The game is
+              currently only playable in console and I am working on building a
+              usable interface.
+            </p>
+            <div class="language-icon-wrapper">
+              <p>
+                <i class="devicon-html5-plain colored"></i>
+                <i class="devicon-css3-plain colored"></i>
+                <i class="devicon-javascript-plain colored"></i>
+              </p>
+            </div>
+          </div>
         </div>
+
+        <h2 class="project-section-header">
+          freeCodeCamp.org Certification Projects
+        </h2>
+        <div class="project-wrapper">
+          <a
+            class="project-tile"
+            href="https://www.freecodecamp.org/certification/T-Kupp/responsive-web-design"
+            target="_blank"
+            ><img
+              class="project-thumbnail"
+              src="./images/fcc-cert-thumbnail.png"
+            />
+            <p class="project-name">Responsive Web Design Cert.</p></a
+          >
+          <div class="project-description">
+            <p>
+              In February 2023 I completed freeCodeCamp.org's Responsive Web
+              Design course earning the respective certification.
+            </p>
+            <div class="language-icon-wrapper">
+              <p>
+                <i class="devicon-html5-plain colored"></i>
+                <i class="devicon-css3-plain colored"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <a class="down-button" href="#contact-section"
+          ><i class="fas fa-arrow-down"></i> Contact
+          <i class="fas fa-arrow-down"></i
+        ></a>
       </div>
-        <p id="copyright">© 2023 Jan-Thorge Kupper</p>
-    </div>
-<!-- End contact section  -->
+      <!-- End project section  -->
 
-  </main>
-</body>
+      <!-- Start contact section -->
+      <div id="contact-section">
+        <div id="contact-text">
+          <h1 class="section-header">Contact me here!</h1>
+          <div id="contact-links-wrapper">
+            <a
+              href="https://github.com/t-kupp"
+              target="_blank"
+              class="contact-link"
+            >
+              <i class="fab fa-github"></i> Github
+            </a>
+            <a
+              href="mailto:kupper.thorge@gmail.com"
+              target="_blank"
+              class="contact-link"
+            >
+              <i class="fas fa-at"></i> Send a mail
+            </a>
+          </div>
+        </div>
+        <p id="copyright">© 2023 Jan-Thorge Kupper</p>
+      </div>
+      <!-- End contact section  -->
+    </main>
+  </body>
 </html>
