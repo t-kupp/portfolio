@@ -251,6 +251,12 @@ a {
   #navbar {
     justify-content: center;
   }
+  #greeting-subtext {
+    font-size: 16px;
+  }
+  #greeting-currently-learning {
+    font-size: 14px;
+  }
   .project-thumbnail {
     width: 288px;
     height: 160px;
