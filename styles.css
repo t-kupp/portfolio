@@ -94,6 +94,7 @@ a {
 }
 
 #greeting-currently-learning {
+  max-width: 1000px;
   font-family: Raleway;
   letter-spacing: 1px;
   font-size: 18px;
