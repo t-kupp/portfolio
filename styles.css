@@ -133,17 +133,17 @@ a {
   min-height: 100vh;
   width: 100%;
   padding-bottom: 80px;
-  background-color: var(--main-black);
+  background-color: #0a0d17;
   border-top: 2px solid black;
   border-bottom: 2px solid black;
 }
 
 .project-section-header {
   text-align: center;
-  font-size: 28px;
+  font-size: 24px;
   padding: 0 40px;
   margin: 40px 0;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid var(--main-darkcyan);
 }
 
 .project-wrapper {
@@ -160,11 +160,20 @@ a {
   object-fit: cover;
 }
 
+.project-date {
+  font-size: 13px;
+  color: var(--main-white);
+  font-style: italic;
+  margin-bottom: 6px;
+}
+
 .project-description {
-  max-width: 400px;
+  letter-spacing: 0.4px;
+  line-height: 18px;
+  font-size: 15px;
+  max-width: 500px;
   margin: 20px 60px;
   margin-bottom: 0px;
-  font-style: italic;
   color: var(--main-lightgray);
 }
 
@@ -256,13 +265,14 @@ a {
   }
   #greeting-currently-learning {
     font-size: 14px;
+    line-height: 22px;
   }
   .project-thumbnail {
     width: 288px;
     height: 160px;
   }
   .project-description {
-    font-size: 14px;
+    font-size: 13px;
     margin: 20px 20px;
     margin-bottom: 0px;
     max-width: 320px;
@@ -274,6 +284,8 @@ a {
   .project-section-header {
     max-width: 300px;
     font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   .section-header {
     font-size: 40px;
