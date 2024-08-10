@@ -26,7 +26,6 @@ html {
 }
 
 a {
-  text-decoration: none;
   color: var(--main-white);
 }
 
@@ -42,6 +41,7 @@ a {
 }
 
 .nav-link {
+  text-decoration: none;
   font-family: Raleway;
   font-weight: 600;
   font-size: 12px;
@@ -188,6 +188,10 @@ a {
   border: 2px solid var(--main-darkcyan);
   background-color: transparent;
   transition: 100ms ease-in-out;
+}
+
+.project-tile {
+  text-decoration: none;
 }
 
 .project-tile:hover .project-name {
