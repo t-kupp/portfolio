@@ -115,6 +115,7 @@ a {
   letter-spacing: 1.5px;
   background-color: var(--main-black);
   transition: 150ms ease-in-out;
+  text-decoration: none;
 }
 
 .down-button:hover {
@@ -237,6 +238,7 @@ a {
   padding: 0px 20px;
   margin: 0 5px;
   white-space: nowrap;
+  text-decoration: none;
 }
 
 :hover.contact-link {
