@@ -27,6 +27,8 @@ html {
 
 a {
   color: var(--main-white);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 1px;
 }
 
 /* Start header */
